@@ -1,602 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<title>Vyxlez Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-<link rel="icon" href="images/icon.png" type="image/png">
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Vyxlez</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <!-- <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li> -->
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-
-	  <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smooth Scroll</title>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Vyxlez — Roblox builder, 3D modeller and environment artist.">
+<meta name="theme-color" content="#040810">
+<title>Vyxlez — Roblox Builder &amp; 3D Modeller</title>
+<link rel="icon" href="images/icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --logo:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAC3CAYAAADZ2pqzAAAaWUlEQVR42u2defRdVXXHP/e+XwagIRaEljJYphZQBAkgihNKrDLIUJknmYwkUECqRKgt0lUFImEKEBKEVIYYIiCTIpPI0FaIgAoyCQgooQFkMiHD773bP/bZ6x1uf8O9Z5973/vBu2u9FZLFvffcs/d3z3sfsiwjwq/P/Tk1k6s/C7tWuD/Pd89rRFpfXT9d795ZljXdr1VyD3Tv7suybGyWZYn7Ba0pybKMCFcCZMDawK+A1bx/L3Nl7p43gQ8BT7u/t+j+K3G/lYD7gM3cutOSz2m55+wC/BhoAM3QRaWRPi5zC/kjcJFbYDNwk5rAOOAoj+Aj4UodcY5zxG0G7K/ec50jbmpl7lgI1g/MgHWAhx2RQlEM8DKwJbAw9+/dStwMWA94CBgf8O2Z+y0HtnF7aCZwGvEjVbQ8D1xhEK163xrAwZ506HbxnAHfBt7j7UXZ/UuB2Y64jRiqKSaCfU7eCHgQWDkQxbpBzwFbAa92sS5WHbkDcLv7/tQgtTYHFsX63jTyxyphngSuNyxSRdP7gP27WBcrckcDp3t/D92304D/jSGaq0Kwj+ItgP8CxngWZshHPwp8GFji6aluQ+8kYKbRan4U2BZ4K+Z3phV8tC74IeAWAzfqfZsBewZuXh1W83uBbxkJkgAnA4sNUqA2Avs6dzrQbxSvGXC0kwTdhF4lxDeBvwrUveoW3eFco2iiuWoCK9ruAn7m/jvEL264jdsG+Jx7bqNL0Nt0btykQKtZ7YrlwFTv79lIILBvFJ1jfJd+8D95+r0bIlapM4rGBBqBCoIfAPcbQFC7kZUX04lD8kcDEZh5G7ijUSLENKy+CMx3/90IIC7A604KPFeFeK4SwXg6qQWcHWhJ+7oucbq4k5a0rmUVF9Qg8Jt0b86qkrhVE9i3qG8Efm30izPgC8DWHYxuKSG+CmxMWLxZRfPTwHlVq52qCaycuhQ402BNJ54onNIhFCtx13cEtrhtCXAq8FoVhlVdOjivi1dxKF4/cHN0ocuQ8OVjNetiJfAVSHQtVPemSDpxe/f3VtWLpiYU/9n5xRZGaQFjga/UjGAl7g7A3kZ3LXNukTU+0DUIzqP4ceBvjCh+A/ggkrmqOgmhxmEfEnqdELh2Rfx8xySNOqRPXaE/H8Uzc8QK0cXjPRQnNaH3MEfcZiBjpkic+RRqTJzUhWDfxVgDeASJ4Ya4GYqehUhC42UDwxS13tcAfuP+zAzonQZ8vS701olgPNfmJeD7hJf1qGG1FtUXBPjx5jUJzxalwAvAGVX6vJ1GsI8IS2mL718/5cTmmxWgWFG2Je1QYgggFL3HADPqRG/dCPYJ8ywwN0LgYyNgvwpQ7EfPznAGVmgiv4FUms6uG72dILC/gecj+c/QSI4GO45CSlVDMjrDGVZfBCYa3CL9rm86/73SoEa3EFgJ8QhwtUEX64ZvAexMvIIAJcI44D8MBFHRfDMSqu1IgqSTFRKK4hURUHysJ0atKNZqxuOReLPFX18CnEQHU5ydIrCi+D6Puy26+GPAZyOgWFG2AbZ4s4r0K5Dq0iglsCMRwSAFARbkKTqOiWRJZ040jw9cl/rJr3hBjXcdgn3/8C6kJsniF2cOwR83WNSKsk8D+xjRmyDZsxc6YTl3C4H9GqTvYisIUGKEphJ1HaN4e31z2fVoGPMJ4MJOE7fTBPa5/Q5ggcHSVBTv5gITZcOJSohJSEFBk3C/OnGi+bVOi+duILASYrlDDkYUjwUml9xUJe6awL8Y7AFlinuQQrqOo7cbCOyj+Hrgt9ijW/sgEa6iKFaUfQupbw7Vvbruk6ioBHakEthH8dnYy3pWdaK2CBI1LjwBSQdmhMebU+cW3U1nqz7fvik1JxuGc5nGImm5DbB36W0BvDiE65R4qLsN+Eyg7tVnv+Xe+RRd1AnZLb0+fkJ8phHF2lt8+DBMojpyPwNxfRVzFvC7btG93YZgXxeORxqg1w5EserQ55xF/doAKNZnruwiTRsSllBQ4i4EPjDIu3oI9jalgVT7X2wwUlT/rQccOEjgQ5H+z84gs2SLEmegvUp3tNZ0LYJ9S3gtJIe6eqDrpMh6zBlQS3OqQHPJC4C/ILx/OQV+CWxHDSWwoRuaOu6N9bO6TFrecin28OWmwL45Ua+S4VRncYf6vZlb78nEL4FNYtGj2xDsE2djh45VAlGsrssDwEccERruz4lInjY0bq0G2XXA7t1mWOVF9Kedeb/CoJNbyJyK39GezWHhHPVPL0AqNvqRfG+oRNgTuNY9ow9JcGxDeK43Qyo0PuJUSSwCKxOvidROW6XCErIs2y2Ldy3JsmwdN3ovNY4ETLIse3+WZUsDRwLqWMBWlmW3e+MWJxvHLep951UwblGfdUokelyuIvo24FPYWjL6HYr/Ffh37NWDioorna8a6qeqjv0E0hv1FPCXgV6ESqWXkP6oFyIGNRSt45Fypr/GNtRlMbCN3nyB27zU8NOSmUOcZWotgtN7z3TqwzKiCCfqT/Esc0uu9zvI2MaYlRo6ruIApLUnc3talg5qoF0JPJFkWZYgedD7kX4fS6pMOe4g4HK3wP4IKL4J2Mm4tqa3iYmBuI8j444WE6+NVdcz2hmW78dWC9aPpD1/o1RfjhTAxQhWgCTeR0VE8Wkeii0IIcJ6TkIK7WNmi/wG91Di+kz4I6eOktT7x7nAM0aLUEXWdk7nWYvg9P57gHvpXJZGXa7bnTUe0y1KPBpYRlRkXtzgLH126gUB3gRmReBMvwgujfAsXc90OjPS0N+4kwf4zljo/STSFA7hSQ+dufULBUOag/b3kBSbhUN1wZ9DptRlkVB8E1Jmm9SMYn3/5W7jqiiBTZAxUZZn6758x1eNaS5G63f+ZUaRMwY4IgLqMu+Z5xNenBf67hRpOD8lMnL9gM5mzoi0Fhz8D/BzX5WlA2zkRUijtkW86r37e/5cYkRRgtQ6/bpGFOt7pwO/p7oC9mMcIEL3SQF5Zv4Z6QCi6GlgntGB9xPvB0YQ03r/ihpRrPvxDO0JQTGJ649M3seI3gTJa9+UV6+DPfA85zpZUKwEmBQp8OGjuK7DOhIXlbNKtKFQdyjhU+LxmP1cR7O3qdd0EFn+K+RQiBgo3gjYNSKK30AaqausWtR9+G9nk8TOFunerEa7tMgSfHkEuGogeqVDIO8cI1F8AkzOhQ2tKP4+Mhm9UTGR/80TgTHfo9JgX+QQE+tQtQuRerb/tx/pELrnTmeRWQwa5fztkQ7AUB8vj+JXvMhbqwLCNlxA41bij1zwvYwphuiaMvszDHEISjqEW6K6mAgojjlIVD9sNvHroHStS5CufCqQEIqyLxB+vpK/1plIsV9alMD+Jt6IVDhiRLH2Df099vClftiLwJzIxpau7UKknqtRoYQ4xoBeP27xn0OpkHSYByz3XARrrfJYF/iAOC5O4uyENyOh2K8Hm0Y1FZKqnlRlWY2rCxnmlJa0wEPmYU9C6Hu+hORjm5FcpmeBH9Iejd9v+Gm26nQiH22TA06GHH+XEH4UQMMx9uzhJFhaQAy8hRQEWPSRGmrvddEti17P+39nekZLn+E3Bml+m0U1WSsV95sjQ2NCPRQl5hzgD8NZ+MNVVfqtlQ+7yJQlV5k6n20CccYKJR4iNnFItMzUmIsU5FWB3nwhoaUPahmSN356uLUWKZvVhX0b+AZxKj60yjGGCxLbR60igKJEWMdJiXGETxBouDjAIUUYMS3INeqWWA0a1UFHVxyk6LZLCXmkI26IDeIbvoVHXhQtfFekXexCaxYU6ws/hsxftqBY0XYJ7apQi/o41em2mMENJcKqSGvsutjmTV+NTOArpkZK1ilv7uqUW4F1yn5d8WXGuuLUrWkz72h46/VklmWrWI9Vz/20HnuKe0czYF0td9+KLMu2d2srtG9pCe5JHAf+xBhc8AvMNjAGPjJkMHifE10tw68fSYwcgD0xkvcexmA7hkD36FakNq1w+DgtuVhtdM4MuliZY1XaYxOSwGes6QgCUsWZGn8ZcAKS3oxR/6XP3BnpHw5lHFVF55UNFKUldUDi9OZd2FOJWiS/eoDDr+s+EEm5NSMS4++cr24Nqeo39iF9yJahpjow7payPnoasOh+Z8VZQo6+27BXSc5W8bSS8ydjhT7zkaaVjCjWb/w4UiiPAb24sGxpRg7te7kNqcCPURs1mXLzntV63412d36sSQXqum2KFClY7QOwVUsqQR9A2l1LS83Q00OWIiUi1k4DDd1NLIFi/ehJxvDpcIT5OtJKEoJi/xT0z2NP6E93IePSdo+1PeIJY1ivbMWHIuyjSOdEFQdyKONNcFIihDiqf6dgP372SaTRPMjmCU00N5DaKGsnhH+i2IScCB6OIcoyVsgaT3QobgV80/tcQCKLgN7goj9LR3+CJJsXGlCsXDna8xOzYTZuY2CPkusPsdJ1At6uJSWFMvyRSB9yi/AhMs8hbaDBHouFwCkyUc7aCaFid2/gb4cQibpJRzijrIhF2XTPvsmpFAI26pgS9ykhVkdy3xYrXMtx3jDEHKKUzsxwiwhNHviBj0MGcXv8MtMyhfQanPke0oKalWS8FtIU9tmCKPYHoq5NeI+vliTNCmTKKATWxf8BKUa3LMTPtowfAJ26cfvRPtgyKbBRegTe3UiDe9mZ1MoQUwvocXUZRzvXyFqOcxlSPWrKusXyH8/zIi6h0+lajuvz+nWgY2WLbJwS8UfAn9wzzikZGGl4RuBw5yfpencnvLhQmfJVt1ZzbtpKYCXqw8A12CscM6fz/MCAMs0/UC6eq4SY6z3nOud2lFmnbvA3hmFgv4nbIhUTpM75j0SoLImVMVEUWxx63bytgB1px3H9sRBF3R3dqAVI+0lC+3jbC0siQ0XkDrSnFjQGYaYdCD8YxK+BO59IlSUxCKz68m6kG8ISvswHPpRYWyEJ/aLo1efMo12n5aOjbNWk/n/HDcJkfqVKqC2i+zgXqcmOUu8dSwfrc84tqeMGE6s7IxN/+j1XpehQF0XPYqSkVv9NpcuiANdOUbwr8OEcipVRNgd2IXyQuY5ZvICI7bGxCKzcd4NnqbYMz2p4aNgQKdIrunH63luRpm0fCWqgXYC0p5QxCpVBpuaYI8kxYUjqUhn3GuIlcaIS2OfkGYbQoK+L90IS7/s6H7loREj/n8toDwXLE+n3wPySYlANv108FCtB16E91TZU97Y8yzkhsmiNieJ5yLjA0BSZouM9yFjEvUq4Rv6091vdfYMhYQbl66jV8DuR9lQ5kMzWOGNY8jZkxkbU8RSxJ75rKjEWir+GFHgnJcXzD5ES34GCBOraLQB+mvOZi65rZ6dzV7iw5KGEn3Oo90wj7hnIlRDYj8JYkhC+qO0rsVlqqFxVwrVLKFdNoqL5BNqzJa3nS/yCdkdFs5sJ7DdoW85dsDDX/e43lKhremKx7Owt30bYmnZs3MLEp9Ger0E3E9gXO5ciB2zUfVDFFRQbi6zF7WUrFdUIGusk1dYlpUCeyR5ggOk43Uxgf/yQKZcZ4Ee+hoQjiwQbmp6+foqwAoJNsKUDE8dglnHJtRPYR7EOB6kaxUqYW5DsVhFiKVMspd0eG2LtW9TJw85eqOzMh7TCDU+RTogf14jiS0v6kS3PZ14UwIiJEQCzXcClMlslrXjDQWqKVlTMTA3kQJB7CornPIp11kUZlymGCrusauavmsA6TMw6jqkII80nrDjNn9H5OtW3tfrq69Wq35fW8CEZ3oDqiphouTPoQoIrqg+fIk5Ou8h6F3norVRipDWIo8QZPwsq+CAlxL3AoxECKzM8dZJVuB+zaM/lzkYygZVj+x2KY0+J1efNxRbma2FsESmh7/9Mu5688tPS6jh9VDfvWuydEAMZK4tK+L5FLOJzqeboAH86zvN1BYDqIHDMcUwDbdiNjshWY0UZ8WdIqDNmXNjv6Tor4h50BYHz/uYLkSxHDUVeGZkITeDsyEahMs98Cow+GokEVv3zJyQJYRWn/pzkeyPqM33u9U6dxHiuMs4yJCVY55kTtZ4ArnrtYtrTUS3jmEAK7pdG1GdKjMWUr74cjml+gkT2aj01pk4C64c+7wgT40PfqsC/1nVe7tSJtT1WxX7t6K2bwL61eo5DnqWfCaTBayxxZnTkifKyF4ywJhV+isw2qfvMp9oJrB/8mHObQnWcouoDSAd9Fvlb/PDlkkBG9F2tGRVImq5FcOpZlBZ3QYvNp/D2yfJV2A4hxFE//TYkklc7ejtF4BbtCfAx3KRPIlUVMYexKMMcBqxiJMw9hI/tH3EEVmt3Q2S8gXUNLaQob0pkG6GFdOcfZhCtes9+jklavAtEtCLjcA8ZaQSG2dMxTQwU6zMPot2LnAY+p4m0kpbpzBixBFYdtBpSRxzD6FC0jSO8Nnmg562EbbZkHsVfw3Y24YggsL5rH+TAylh6STfsEOTIAMsm+oXtm0ZAnaJ4c8pP9BtRBE48fTmpgm/QsYh7GDdRxfHxRgt/oOtE2h2S7zgC63t2Qqa/VTHATEcLjwpEsfq6n0JmS8ayyhuez75PRd/ecQKrzxrrDMPBROtWtCfihPTogrSB9lXkV3/VI3jyTiGwftCWtEczNCpiIjyXqRXAIB/CdhL3cGqkqud3hZF1NNWdoO0TaSKwTS4YUpRBjkLGIDWppkBQdXGV+1ArgdU10rnQVb7TN+SOpPhBmMoY61asI5Wo29OOnzdGOoH1A45AuvSrQMZgrti6BUWhBl8mUW6SgOWaSk3HCqU1oHcc9rmNZd+5KnBwgXf6YclDa1ijf57yThTrguxaAqvo+0dktG5dhkX+EKqhEKlrPABbWLKsr63GYDJSEZx43HkUcQ6GLosSf15zY4g1Wk/iLnv1uffuiBwOVmmmKa0YvZ9BUnmh02esuWI9U2kg3a86cHekz9dyalrI+hrIeMRkJCI481wjy/lK1oFq2zomy6sHX8KUGZE4FDOHWNQTnT6uTBenFT1TJ7/taNC9byFzqEORrIUFkwcgoK7xE4TNltRnLUHqrUKPae8DTmKE9Qf7s6PKHJejl05pvxlJs4V+vBLs80gc2BfBflgyCxCz+v8vQIawLApgRB/F21aF4rQi9K6FjOgPPbYuQfqN5iDjmEKJ3ESSD5O8Z+saP4ikBUP2wS+m86svW4EoPtaoJmojsH9kXchp4SrOX3IIXo5UNoZWX6oh5U+Kb3joHR0oYXQ8xQ20Z18uDgheKLPtgcSpo7uSaWTiNpE65dBaJi1uu572yN9LkLlbIQXo/iEZGvjod1Gu0AS8ftN0pLa7D+k3mp/7hjKAGOvUUVcjWJGxB3LkXIh/l5/S3od0QlxpENP5Y240LDk+AL1+Xfe8nAV9vmOeUBTviWTcogZbqhhGOjnQxdHN+y0y1s9/porAEJdE79nAGTSjsM+WvMhZ+XpYp86+DJkopAw4BjlOrysR7Ncob2/YPJBJdStoT6JLHWJuNOjizLMNvuz0cVnx7E/HmZNbizL0uYH7mnpBl41j6uJYBNYNPMr78KTk/TqULN/xoH9O89ASElhIXNBjGuEVH4mzCV7LiWLVu3fSPiOirC7Was7jiJj0SCM9Q4+c25Xwqasg3fX5U1EUOQ/QbgEJTZaPcZsY2oayiPaQ1eYA+9D0UBwaEfsS8Wq8o5atfoXiR84NdulZCo1B9NT0COvOAu8ZbjqOfrc2j5et2lDGXZn2qOKOI9gvZj8o8JkqnhciTdIDTWlXXfxzpA2zrDsyEEOWXd+bTjwPxSQpEr4MnUWijHOwQ7FZF6eRGEQDGyGukRLqWoYeP6wWa/RzDQqub44zsIZCpt88vpCw2ZctpK3neDp8bpI//fxwg2Ggc7SuGIZwunk3IFNa62jHVPQud37ucKj0B6LPCbQX/HMa17KiOEbj167IuQqWkfYPOetzKNHrj2OaVROClamuAh6n+JhinST7ugHFqyGpTJNFbTmZOvMCGxbjBRepKsIg/sHUz1Nt+amuZwVwBuVGFCdOnF9jRPGXHYqDLWoLgVvAdi64YTkv6A3ak+qyEvfMNjBWGULdTHs6TqvE/ujsy34DitewothCYFxgoy8QRbqBt1JuOJhu1CxsB1MXEbP9wOkBRp0amw86zyAExUkMFFsam9dHxjCEGgG6YZdTfkp7A8k2XZILlMREb4rExO81uGUZ4bMvUw/FR4ai2EIYLWYPPe1L47p3UL6qQj92JnEHoeW/8buEnajio/hOyh/dk0fx4UgmrPReh+RCm8ixcwcadIMS4+pAMasf+rizcGOO5lXC3O30rzWo0o/MvkwMKF4PybGXlpZpIOL3cy+1zK9Y7nxfK8p0iHcSGb0zIkSS/NmXjxt18bEE5LBD/NZRTidYEJI4sfUw4aMCFWn3O0Mmxvhf3bwHnWUf48h6DV+G+u66P+s6tViK6coQWMXoRKRL31oF+APC038DoS1G05iqnHOR6bAxdLs/CPxFI4qPc+qxsOQsWxAHtmJ29ZdfcfrXagEriu9ABo5ZUKwM+4QLUMSa6eyPUr6UsNIjfw7J3mVQnJZE7wQG7hQoQxCteX4xUiRKDb95EQgBkgl6I7Jlrs/Rg7BCfHdljOMpkZZNSyxQe31CSk399yVG42qwa3Ek4+pZ4ncaqHTQ8xxDJJeieBNg/6IgS0s8eC2k8s+vtCjz63f3PYFUbsQOUMTqChhFtZ2QM53VH7KHGi84gYKD1dISnD0FyXCkbjPTkr8+9+c82vXEMTcy67LnDOY9/BIJz1r2cFPaKdohadhXcGGjkf6ZJwkvyVFdeWUF6B0pl0rDaUgZL4FRwAYyLmqWJxmDCYx7yO7EOaBi2buYwH715ZZGt65RxGPoK8E1SyJGijJ617I6XtJXkjDdrONG2pXUsZd9PcJ07HpHnXzWuzpo1fWuHoF7V4/AvatH4N7VI3Dv6hG4d/UI3Lt6BO4RuHf1CNy7egTuXT0C964egXtXj8C9q0fgHoF7V4/AvatH4N7VI3Dv6hG4d/UI3Lt6BO5d/we9yLt6Ss9vGAAAAABJRU5ErkJggg==);
+  --bg:#040810; --panel:#0c1424; --line:#1b2a47; --text:#e6eefb; --muted:#8fa3c4;
+  --accent:#60a5fa; --accent2:#67e8f9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-1;display:block}
+#planets{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.planet{position:absolute;border-radius:50%;animation:drift 9s ease-in-out infinite alternate}
+.p1{width:230px;height:230px;right:-70px;top:20%;
+  background:radial-gradient(circle at 30% 28%,#bfdbfe 0%,#60a5fa 38%,#1e3a8a 72%,#0a1433 100%);
+  box-shadow:inset -26px -22px 54px rgba(0,0,0,.65),0 0 90px rgba(96,165,250,.28)}
+.p1::after{content:"";position:absolute;left:-28%;top:34%;width:156%;height:32%;border-radius:50%;
+  border:7px solid rgba(103,232,249,.38);transform:rotate(-18deg)}
+.p2{width:96px;height:96px;left:5%;top:64%;animation-duration:12s;animation-delay:-4s;
+  background:radial-gradient(circle at 32% 30%,#a5f3fc 0%,#0ea5e9 45%,#082f49 85%);
+  box-shadow:inset -12px -10px 24px rgba(0,0,0,.6),0 0 50px rgba(14,165,233,.3)}
+.p3{width:42px;height:42px;left:14%;top:15%;animation-duration:7s;animation-delay:-2s;
+  background:radial-gradient(circle at 35% 32%,#e6eefb 0%,#8aa0c6 55%,#1b2a47 100%);
+  box-shadow:inset -6px -5px 12px rgba(0,0,0,.55)}
+@keyframes drift{from{transform:translateY(-10px)}to{transform:translateY(12px)}}
+body{background:var(--bg);color:var(--text);font-family:'Sora',system-ui,sans-serif;line-height:1.7;font-weight:300}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:10;background:rgba(4,8,16,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand{font-weight:800;letter-spacing:.02em}
+.brand span{color:var(--accent)}
+nav ul{display:flex;gap:28px;list-style:none;font-size:.9rem;color:var(--muted)}
+nav ul a:hover{color:var(--text)}
+
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:96px;
+  background:radial-gradient(60% 50% at 80% 20%,rgba(96,165,250,.18),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1fr;gap:24px;justify-items:center;text-align:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.typing{margin-top:18px;font-size:1.4rem;color:var(--accent);min-height:2.2rem}
+.typing::after{content:"";display:inline-block;width:2px;height:1.2em;background:var(--accent);margin-left:4px;vertical-align:-.2em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero p.lead{margin:14px auto 0;color:var(--muted);max-width:46ch}
+.btns{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid var(--accent);transition:background .2s,color .2s}
+.btn.solid{background:var(--accent);color:#04122b}
+.btn.solid:hover{background:var(--accent2);border-color:var(--accent2)}
+.btn.ghost:hover{background:rgba(96,165,250,.14)}
+
+/* logo + emblem */
+.logo-mark{display:block;background:linear-gradient(160deg,var(--accent2),var(--accent));
+  -webkit-mask:var(--logo) center/contain no-repeat;mask:var(--logo) center/contain no-repeat}
+.avatar{width:96px;height:96px;flex:none;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 32% 26%,#17407f,#0a1530 72%);
+  border:2px solid var(--accent);box-shadow:0 0 30px rgba(96,165,250,.28)}
+.avatar .logo-mark{width:38px;height:58px}
+.emblem{position:relative;width:min(100%,340px);aspect-ratio:1;justify-self:center;align-self:center;display:grid;place-items:center}
+.ring{position:absolute;border-radius:50%;border:1px solid var(--line)}
+.r1{inset:2%;animation:spin 48s linear infinite}
+.r2{inset:19%;border-color:rgba(96,165,250,.38);animation:spin 30s linear infinite reverse}
+.dot{position:absolute;left:50%;top:-8px;width:16px;height:16px;margin-left:-8px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#bfdbfe,#60a5fa 55%,#1e3a8a);box-shadow:0 0 20px rgba(96,165,250,.75)}
+.d2{top:auto;bottom:-6px;width:11px;height:11px;margin-left:-5px;background:radial-gradient(circle at 35% 30%,#cffafe,#22d3ee 55%,#0e4a63);box-shadow:0 0 16px rgba(103,232,249,.7)}
+.core{width:44%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 32% 26%,rgba(96,165,250,.38),rgba(8,14,30,.92) 70%);
+  border:1px solid rgba(96,165,250,.55);box-shadow:0 0 90px rgba(96,165,250,.32),inset 0 0 40px rgba(96,165,250,.16)}
+.core .logo-mark{width:36%;height:56%}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* headings */
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-.01em;margin-bottom:14px}
+.sub{color:var(--muted);max-width:56ch;margin-bottom:48px}
+
+/* about */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about-card{background:rgba(12,20,36,.75);border:1px solid var(--line);border-radius:22px;padding:28px}
+.about-top{display:flex;gap:20px;align-items:center;margin-bottom:26px}
+.about-top p{color:var(--muted);font-size:.9rem}
+.about-top strong{color:var(--text);font-weight:600}
+.skill{margin-top:16px;font-size:.9rem}
+.skill div.row{display:flex;justify-content:space-between;margin-bottom:6px}
+.bar{height:6px;border-radius:6px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:6px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.facts{list-style:none;margin-top:28px;border-top:1px solid var(--line)}
+.facts li{display:flex;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.facts li span:first-child{min-width:110px;color:var(--muted)}
+.about p.copy{color:var(--muted)}
+
+/* projects */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:28px}
+.card{background:rgba(12,20,36,.75);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:border-color .2s}
+.card:hover{border-color:var(--accent)}
+.thumb{aspect-ratio:16/10;background-color:#09101f;background-size:cover;background-position:center;background-repeat:no-repeat;overflow:hidden}
+.thumb.contain{background-size:contain}
+.thumb div{width:100%;height:100%;background:inherit;transition:transform .4s}
+.card:hover .thumb div{transform:scale(1.06)}
+.card .body{padding:22px 24px 26px}
+.card h3{font-size:1.1rem;font-weight:600;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.9rem}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.stat{background:rgba(12,20,36,.75);border:1px solid var(--line);border-radius:18px;padding:26px 28px;backdrop-filter:blur(4px)}
+.stat strong{display:block;font-size:2.8rem;font-weight:800;line-height:1.1;color:var(--accent)}
+.stat span{color:var(--muted);font-size:.92rem}
+/* groups */
+.totals{display:flex;gap:48px;flex-wrap:wrap;margin-bottom:40px}
+.totals strong{display:block;font-size:2.8rem;font-weight:800;line-height:1.1;color:var(--accent)}
+.totals span{color:var(--muted);font-size:.9rem}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.group{display:block;transition:border-color .2s;background:rgba(12,20,36,.75);border:1px solid var(--line);border-radius:18px;padding:22px 24px;backdrop-filter:blur(4px)}
+.group:hover{border-color:var(--accent)}
+.group .go{display:inline-block;margin-top:14px;font-size:.88rem;font-weight:600;color:var(--accent)}
+.group h3{font-size:1.05rem;font-weight:600}
+.group .role{color:var(--muted);font-size:.85rem;margin-bottom:10px}
+.group .visits{font-size:1.5rem;font-weight:800;color:var(--accent)}
+.group .visits small{display:block;font-size:.78rem;font-weight:300;color:var(--muted)}
+
+/* contact */
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.contacts a{display:block;background:rgba(12,20,36,.75);border:1px solid var(--line);border-radius:18px;padding:24px;transition:border-color .2s}
+.contacts a:hover{border-color:var(--accent)}
+.contacts small{display:block;color:var(--muted);font-size:.8rem}
+.contacts b{font-weight:600;word-break:break-all}
+.cta{margin-top:48px;text-align:center;color:var(--muted)}
+.cta .btn{margin-left:10px}
+.socials{margin-top:28px;display:flex;justify-content:center;gap:24px;color:var(--muted)}
+.socials a:hover{color:var(--accent)}
+
+footer{padding:40px 0;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+footer a{color:var(--accent)}
+
+@media (max-width:820px){
+  .p1{width:140px;height:140px;right:-50px;opacity:.7}.p2{width:60px;height:60px}.p3{display:none}
+  .hero .wrap,.about{grid-template-columns:1fr}
+  .emblem{width:min(78%,280px)}
+  nav ul{gap:16px;font-size:.82rem}
+  section{padding:72px 0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.typing::after{animation:none}.planet,.ring{animation:none}.card .thumb div{transition:none}
+}
+</style>
 </head>
-
-<body>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Vyxlez</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Developer  ',
-						'Content Creator ',
-						// 'Teacher   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Roblox Developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.youtube.com/@Vyxlez" class="btn btn-primary py-3 px-4">YouTube</a> 
-							<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-							
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Vyxlez</span></p>
-										<p><span class="title-s">Skills: </span> <span>Builder, 3D Modeller, Environmental Artist</span></p>
-										<p><span class="title-s">Experience: </span> <span>4 Years</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>Building</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>3D Modelling</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Environmental Designing</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Texturing</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>VFX, Animating, Icons</span> <span class="pull-right">45%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About Me</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>With over 4 years of experience in Roblox game development, I specialize in 3D modeling, environment design, and building immersive game worlds.
-									Skilled in texturing, asset creation, and level design.
-									I deliver engaging and optimized experiences for players. Passionate about bringing creative ideas to life and collaborating on innovative projects.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Builder &amp; 3D Modeller</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English</span></li>
-									<li class="d-flex"><span>Main Skills:</span> <span>Building, 3D Modelling, Envrionmental Designing &amp; Texturing</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>VFX, Gamepass Icons, Renders</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="100">0</span> <span>+</span>
-									<span>&nbsp; Commissions completed</span>
-								</p>
-								<p><a href="https://www.roblox.com/users/2044711693/profile" class="btn btn-primary py-3 px-3">Roblox Profile</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are some of the projects I have worked on.</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a class="block-20 zoom-effect" style="background-image: url('images/proj_1.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">Forest Showcase</a></h3>
-                <p>Created a realistic forest environment with detailed vegetation and lighting to immerse users in a serene and mysterious natural landscape.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-             <a class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">Café Interior</a></h3>
-                <p>Designed a warm and inviting café interior with dynamic lighting and furniture arrangement to provide a comfortable virtual social space.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a class="block-20 zoom-effect" style="background-image: url('images/proj_3.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading">Death Penalty Inspired Scene</a></h3>
-                <p>Developed a moody, industrial-inspired environment to simulate high-stakes decision-making scenarios, focusing on tension and atmospheric storytelling.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a class="block-20 zoom-effect" style="background-image: url('images/proj_4.png">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading">Gradient Stud Style Roblox Map</a></h3>
-				  <p>A custom-built map designed for my shooting game in the classic studded style but with new touch, featuring clean geometry and nostalgic Roblox aesthetics.</p>
-				</div>
-			  </div>
-			</div>
-
-<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a class="block-20 zoom-effect" style="background-image: url('images/proj_5.png">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading">Dead Sands</a></h3>
-				  <p>Large-scale map created for the popular Roblox game “Dead Sands,” inspired by Dead Rails. Helped contribute to peak concurrency of over 20k players.</p>
-				</div>
-			  </div>
-			</div>
-
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a class="block-20 zoom-effect" style="background-image: url('images/proj_6.png">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading">Go-Kart Shop Lobby</a></h3>
-				  <p>Built a vibrant and interactive go-kart shop lobby inspired by RIVALS, featuring display zones, vehicle showcases, and a competitive atmosphere.</p>
-				</div>
-			  </div>
-			</div>
-
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a class="block-20 zoom-effect"
-   style="background-image: url('images/proj_7.png') !important;
-          background-size: contain !important;
-          background-position: center !important;
-          background-repeat: no-repeat !important;">
-</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading">Stylized Sword</a></h3>
-				  <p>Some of my modeling work, featuring a stylized sword I designed and hand-painted.
-</p>
-				</div>
-			  </div>
-			</div>
-
-			<!-- New Project -->
-<div class="col-md-4 d-flex ftco-animate">
-    <div class="blog-entry justify-content-end">
-        <a class="block-20 zoom-effect"
-   style="background-image: url('images/proj_8.png') !important;
-          background-size: contain !important;
-          background-position: center !important;
-          background-repeat: no-repeat !important;">
-</a>
-
-        <div class="text mt-3 float-right d-block">
-            <h3 class="heading">Tanjiro Character</h3>
-            <p>A stylized 3D character model with detailed hand-painted textures, focusing on capturing the character’s iconic design while keeping a clean and game-ready finish.
-</p>
-        </div>
-    </div>
+<body id="top">
+<canvas id="stars" aria-hidden="true"></canvas>
+<div id="planets" aria-hidden="true">
+  <div class="planet p1"></div>
+  <div class="planet p2"></div>
+  <div class="planet p3"></div>
 </div>
-		 </div>
-	  </div>
-    </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="100	">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="150">0</strong>
-                <span>Maps Built</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">vyxlez<span>.</span></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#groups">Groups</a></li>
+      <li><a href="#numbers">Numbers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="emblem" role="img" aria-label="Vyxlez logo inside orbiting rings">
+      <div class="ring r1"><i class="dot"></i></div>
+      <div class="ring r2"><i class="dot d2"></i></div>
+      <div class="core"><span class="logo-mark"></span></div>
+    </div>
+    <div>
+      <h1>Hi, I’m <em>Vyxlez</em>.</h1>
+      <div class="typing" id="typing" aria-live="off"></div>
+      <p class="lead">Roblox builder, 3D modeller and environment artist. I make maps and models that take games to their full potential.</p>
+      <div class="btns">
+        <a class="btn solid" href="#groups">Who I work with</a>
+        <a class="btn ghost" href="https://x.com/vyxlez">Twitter</a>
+        <a class="btn ghost" href="https://www.roblox.com/users/2044711693/profile">Roblox profile</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="about-card">
+      <div class="about-top">
+        <div class="avatar" role="img" aria-label="Vyxlez logo"><span class="logo-mark"></span></div>
+        <div>
+          <p><strong>Vyxlez</strong></p>
+          <p>Builder, 3D Modeller, VFX &amp; Environmental Artist</p>
+          <p>4 years of experience</p>
         </div>
       </div>
-	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Twitter  </span> </h2>
-						<div class="heading"> <h4> I love to build maps & models &amp; and take games to their maximum potential </h4>
-						<br>
-						<p><a href="https://x.com/vyxlez" class="btn btn-primary py-3 px-5">Talent Hub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+      <div class="skill"><div class="row"><span>Building</span><span>95%</span></div><div class="bar"><i style="width:95%"></i></div></div>
+      <div class="skill"><div class="row"><span>Environmental designing</span><span>90%</span></div><div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><div class="row"><span>3D modelling</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+      <div class="skill"><div class="row"><span>Texturing &amp; VFX</span><span>85%</span></div><div class="bar"><i style="width:85%"></i></div></div>
+      <div class="skill"><div class="row"><span>Animating, icons &amp; other skills</span><span>45%</span></div><div class="bar"><i style="width:45%"></i></div></div>
+    </div>
 
+    <div>
+      <h2>About me</h2>
+      <p class="copy">With over 4 years of experience in Roblox game development, I specialize in 3D modeling, environment design and building immersive game worlds. I’m skilled in texturing, asset creation and level design, and I deliver engaging, optimized experiences for players. I love bringing creative ideas to life and collaborating on new projects.</p>
+      <ul class="facts">
+        <li><span>Profile</span><span>Roblox Developer</span></li>
+        <li><span>Language</span><span>English</span></li>
+        <li><span>Main skills</span><span>Building, 3D modelling, environmental designing, texturing &amp; VFX</span></li>
+        <li><span>Other skills</span><span>Animating, gamepass icons, renders &amp; other skills</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
+<section id="groups">
+  <div class="wrap">
+    <h2>The groups I am currently working with</h2>
+    <p class="sub">Studios and communities I’m building for right now.</p>
+    <div class="totals">
+      <div><strong id="t-groups">0</strong><span>Groups</span></div>
+      <div><strong id="t-visits">0</strong><span>Total visits</span></div>
+    </div>
+    <div class="groups" id="groups-list"></div>
+  </div>
+</section>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
-        </div>
+<section id="numbers" style="padding-top:0">
+  <div class="wrap">
+    <h2>By the numbers</h2>
+    <p class="sub">A quick look at the work so far.</p>
+    <div class="stats" id="stats-list"></div>
+  </div>
+</section>
 
-        <div class="row d-flex contact-info mb-5 justify-content-center">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-style"></span>
-          		</div>
-          		<h3 class="mb-4">Discord</h3>
-	            <p><a href="https://discord.com/users/1152522254790426734">vvyxlez</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-heart"></span>
-          		</div>
-          		<h3 class="mb-4">Roblox</h3>
-	            <p><a href="https://www.roblox.com/users/2044711693/profile">vvyxlez</a></p>
-	          </div>
-          </div>
-		  
-		  <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-twitter"></span>
-          		</div>
-          		<h3 class="mb-4">X</h3>
-	            <p><a href="https://x.com/vyxlez">vyxlez</a></p>
-	          </div>
-          </div>
+<section id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p class="sub">Want a map, a model or a collaboration? Reach me here.</p>
+    <div class="contacts">
+      <a href="https://discord.com/users/1152522254790426734"><small>Discord</small><b>vvyxlez</b></a>
+      <a href="https://www.roblox.com/users/2044711693/profile"><small>Roblox</small><b>vvyxlez</b></a>
+      <a href="https://x.com/vyxlez"><small>X</small><b>@vyxlez</b></a>
+      <a href="mailto:vyxlez@gmail.com"><small>Email</small><b>vyxlez@gmail.com</b></a>
+    </div>
+    <p class="cta">Have a question? <a class="btn solid" href="https://forms.gle/fMH2MEFvTRoTreRb8">Ask here</a></p>
+    <div class="socials">
+      <a href="https://www.youtube.com/@Vyxlez">YouTube</a>
+      <a href="https://twitter.com/vyxlez">Twitter</a>
+      <a href="https://www.instagram.com/vvyxlez/">Instagram</a>
+    </div>
+  </div>
+</section>
 
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-mail_outline"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:vyxlez@gmail.com">vyxlez@gmail.com</a></p>
-	          </div>
-          </div>
+<footer>
+  <div class="wrap">© <span id="year"></span> Vyxlez. All rights reserved. Built by <a href="https://www.roblox.com/users/2044711693/profile">Vyxlez</a>.</div>
+</footer>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/fMH2MEFvTRoTreRb8" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@Vyxlez"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/vyxlez"><span class="icon-twitter"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/vvyxlez/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
 
+// Typing loop
+(function(){
+  var el = document.getElementById('typing');
+  var words = ['Roblox Developer','Builder','3D Modeller','VFX Artist'];
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce){ el.textContent = words[0]; return; }
+  var w = 0, c = 0, del = false;
+  function tick(){
+    var word = words[w];
+    el.textContent = word.slice(0, c);
+    if (!del && c === word.length){ del = true; return setTimeout(tick, 1400); }
+    if (del && c === 0){ del = false; w = (w + 1) % words.length; }
+    c += del ? -1 : 1;
+    setTimeout(tick, del ? 45 : 90);
+  }
+  tick();
+})();
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This portfolio is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.roblox.com/users/2044711693/profile" target="_blank">Vyxlez</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+// EDIT THIS LIST: name, link, your role, and visits (optional, leave out if unknown)
+var ROLE = 'Builder, Modeller, VFX Artist, Environmental Artist';
+var GROUPS = [
+  {name:'Zap Works', url:'https://zap-works.com', role:ROLE},
+  {name:'Beamo Studio', url:'https://www.beamo.studio', role:ROLE},
+  {name:'My Entertainment Games', url:'https://www.roblox.com/communities/15763730/My-Entertainment-Games#!/about', role:ROLE}
+];
+(function(){
+  var list = document.getElementById('groups-list'), total = 0;
+  GROUPS.forEach(function(g){
+    total += g.visits || 0;
+    var d = document.createElement('a'); d.className = 'group';
+    d.href = g.url; d.target = '_blank'; d.rel = 'noopener';
+    d.innerHTML = '<h3></h3><p class="role"></p><span class="go">Visit</span>';
+    d.querySelector('h3').textContent = g.name;
+    d.querySelector('.role').textContent = g.role;
+    if (g.visits){
+      var v = document.createElement('div'); v.className = 'visits';
+      v.innerHTML = g.visits.toLocaleString() + '<small>visits</small>';
+      d.insertBefore(v, d.querySelector('.go'));
+    }
+    list.appendChild(d);
+  });
+  document.getElementById('t-groups').textContent = GROUPS.length;
+  var tv = document.getElementById('t-visits');
+  if (total) tv.textContent = total.toLocaleString(); else tv.parentNode.remove();
+})();
 
+// EDIT THIS LIST: add or change the numbers shown in "By the numbers"
+var STATS = [
+  {value:'100+', label:'Commissions done'},
+  {value:'400M+', label:'Visits combined'}
+];
+(function(){
+  var list = document.getElementById('stats-list');
+  STATS.forEach(function(x){
+    var d = document.createElement('div'); d.className = 'stat';
+    d.innerHTML = '<strong></strong><span></span>';
+    d.querySelector('strong').textContent = x.value;
+    d.querySelector('span').textContent = x.label;
+    list.appendChild(d);
+  });
+})();
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+// Space background
+(function(){
+  var cv = document.getElementById('stars'), ctx = cv.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var stars = [], W, H;
+  function size(){
+    var r = window.devicePixelRatio || 1;
+    W = cv.width = innerWidth * r; H = cv.height = innerHeight * r;
+    var n = Math.min(260, Math.round(innerWidth * innerHeight / 6000));
+    stars = [];
+    for (var i = 0; i < n; i++) stars.push({
+      x: Math.random() * W, y: Math.random() * H,
+      r: (Math.random() * 1.3 + .3) * r,
+      p: Math.random() * 6.28, s: Math.random() * .02 + .005,
+      c: Math.random() < .2 ? '103,232,249' : (Math.random() < .5 ? '96,165,250' : '230,238,251')
+    });
+  }
+  function draw(){
+    ctx.clearRect(0, 0, W, H);
+    var g = ctx.createRadialGradient(W*.8, H*.1, 0, W*.8, H*.1, W*.6);
+    g.addColorStop(0, 'rgba(40,110,230,.22)'); g.addColorStop(1, 'rgba(4,8,16,0)');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    var g2 = ctx.createRadialGradient(W*.1, H*.9, 0, W*.1, H*.9, W*.5);
+    g2.addColorStop(0, 'rgba(20,170,220,.12)'); g2.addColorStop(1, 'rgba(4,8,16,0)');
+    ctx.fillStyle = g2; ctx.fillRect(0, 0, W, H);
+    stars.forEach(function(s){
+      s.p += s.s;
+      var a = reduce ? .8 : .35 + .65 * Math.abs(Math.sin(s.p));
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, 6.28);
+      ctx.fillStyle = 'rgba(' + s.c + ',' + a + ')'; ctx.fill();
+    });
+    if (!reduce) requestAnimationFrame(draw);
+  }
+  addEventListener('resize', function(){ size(); if (reduce) draw(); });
+  size(); draw();
+})();
+</script>
+</body>
 </html>
